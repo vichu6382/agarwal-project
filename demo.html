@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>the title</title>
+<script type="text/javascript" src="/jquery/jquery-3.7.1.js"></script>
+<script type="text/javascript" language="javascript">
+ 
+$(document).ready(function()
+{
+$("div").click(function ()
+{
+var offset = $(this).offset();
+$("#lresult").html("left offset: <span>" + offset.left + "</span>.");
+$("#tresult").html("top offset: <span>" + offset.top + "</span>.");
+ });
+});
+</script>
+<style>
+div 
+{ 
+width:60px; 
+height:60px; 
+margin:5px; 
+float:left; 
+}
+</style>
+</head>
+<body>
+<p>Click on any square:</p>
+<span id="lresult"> </span>
+<span id="tresult"> </span>
+<div style="background-color:blue;"></div>
+<div style="background-color:pink;"></div>
+<div style="background-color:#123456;"></div>
+<div style="background-color:#f11;"></div>
+</body>
+</html>

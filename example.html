@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>the title</title>
+    <script type="text/javascript" src="/jquery/jquery-3.7.1.js"></script>
+    <script type="text/javascript" language="javascript">
+
+        $(document).ready(function () {
+            $("div").click(function () {
+                var offset = $(this).offsetParent();
+                $("#lresult").html("left offset: <span>" + offset.offset().left +
+                    "</span>.");
+                $("#tresult").html("top offset: <span>" + offset.offset().top +
+                    "</span>.");
+            });
+        });
+    </script>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+ <div></div>
+
+
+<style>
+      div {
+            background-color: rgb(103, 171, 255);
+            width: 200px;
+            height: 400px;
+            position: absolute;
+            padding: 15px;
+        }
+</style>
+    <script>
+        $(document).ready(function () {
+           $(this).ready(function () {
+               var div = $("div");
+               div.animate({
+                   left: '400px',
+                   height: '300px',
+                   width: '300px',
+                   top:'300px',
+                   opacity: '1.0'
+               }, "slow");
+               div.animate({
+                   fontsize: '78px'
+               }, "slow");
+           });
+       });
+</script>
+</body>
+
+
+
+</html>

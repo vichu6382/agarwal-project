@@ -1,0 +1,52 @@
+ #body form{
+ margin-top: 100px;
+}
+
+label {
+    font-weight: 500;
+}
+
+button {
+    width: 150px;
+    margin-bottom: 50px;
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    font-weight: 100;
+}
+
+.photo {
+    width: 150px;
+    border-radius: 50%;
+}
+
+#image {
+    width: 430px;
+    height: 300px;
+    border-radius: 00px 00px 250px 100px;
+    box-sizing: border-box;
+    background-color: rgb(68, 119, 177);
+}
+
+img {
+    position: relative;
+    top: 20PX;
+    left: 20%;
+    border-radius: 200px 200px 200px 200px;
+    width: 100%;
+}
+body hr{
+   height: 30px;
+}
+@media (max-width:600px){
+    img {
+     
+    }
+}
